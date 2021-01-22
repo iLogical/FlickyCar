@@ -1,0 +1,30 @@
+{
+  "name": "flicky-car",
+  "version": "0.0.0",
+  "repository": "",
+  "author": "Daniel Morrison <ilogical8502@gmail.com>",
+  "scripts": {
+    "watch": "webpack --watch --mode development",
+    "prestart": "webpack --config webpack.config.js",
+    "dev": "webpack --mode development ./src/index.ts --output ./dist/index.js",
+    "build": "webpack --mode production ./src/index.ts --output ./dist/index.js"
+  },
+  "dependencies": {
+    "pixi-timer": "^1.0.1",
+    "pixi.js": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/pixi.js": "^4.7.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "base64-inline-loader": "^1.1.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.1.0",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-livereload-plugin": "^2.1.1"
+  }
+}
